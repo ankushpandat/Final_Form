@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <title>Miscellaneous Form</title>
+    <link rel="stylesheet" href="vendor.css">
+</head>
+
+<body>
+    <div class="w-4/5 m-auto">
+
+        <form>
+            <h1 class="text-4xl text-center underline font-bold mt-4 mb-4">Miscellaneous Issues Form</h1>
+            <div class="flex border border-blue-500">
+                <div class="w-4/5">
+                    <div class="w-5/5">
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Serial
+                                Number</label>
+                            <input type="text" id="first_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter serial number" required />
+                        </div>
+                        <div>
+                            <label class="block mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white">Item
+                                Code</label>
+                            <input type="text" id="last_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter item code" required />
+                        </div>
+                        <div>
+                            <label class="block mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white">Short
+                                Description</label>
+                            <input type="text" id="company"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter short description" required />
+                        </div>
+                        <div>
+                            <label class="block mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white">Vendor
+                                Code</label>
+                            <input type="url" id="website"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter vendor code" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-4/5">
+                    <div class="w-5/5">
+
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
+                            <input type="tel" id="phone"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter quantity" required />
+                        </div>
+                        <div>
+                            <label
+                                class="block mt-3 mb-2 text-sm font-medium text-gray-900 dark:text-white">Location</label>
+                            <input type="url" id="website"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Enter location" required />
+                        </div>
+                        <div>
+                            <label
+                                class="block mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white">Sub-Inventory</label>
+                            <select id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected disabled>Choose One</option>
+                                <option value=""></option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <label
+                                class="block mb-2 mt-3 text-sm font-medium text-gray-900 dark:text-white">Bill</label>
+                            <select id="countries"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-4/5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected disabled>Choose One</option>
+                                <option value="With Bill">With Bill</option>
+                                <option value="Without Bill">Without Bill</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 mt-5 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

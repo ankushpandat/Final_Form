@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.main_div{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.search_section{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search_section input{
+    width: 500px;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+table, th, td {
+    border: 1px solid;
+    /* width: 100px; */
+}
+
+table.a{
+    width: 3000px;
+    
+}
+th{
+    
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.table_section{
+    overflow-x: scroll;
+    margin: 0 20px;
+}
+
+
+th, td{
+    text-align: left;
+    padding: 20px
+}
+ 
+table {
+    border-collapse: collapse;
+  }

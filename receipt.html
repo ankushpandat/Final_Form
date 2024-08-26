@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+
+<body>
+    <div class="main_div">
+        <form action="">
+            <h1>Receipt Details Form</h1>
+            <div class="inner_form">
+                <div>
+                    <label>Receipt No</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Payment Method</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="paymentMethod" name="paymentMethod">
+                        <option selected disabled>Select One</option>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="debitCard">Debit Card</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                        <option value="cash">Cash</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Member ship ( New/ Renew)</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="membershipType" name="membershipType">
+                        <option selected disabled>Select One</option>
+                        <option value="new">New</option>
+                        <option value="renew">Renew</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="scrolling_div">
+                <fieldset>
+                    <legend>Membership Details</legend>
+                    <div class="inner_form2">
+                        <div>
+                            <label>Year of Membership</label>
+                            <!-- <input type="number" name="" id=""> -->
+                            <select name="" id="">
+                                <option selected disabled>Select Year</option>
+                                <option value="">2018-19</option>
+                                <option value="">2019-20</option>
+                                <option value="">2020-21</option>
+                                <option value="">2021-22</option>
+                                <option value="">2022-23</option>
+                                <option value="">2023-24</option>
+                                <option value="">2024-25</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>One Time Enrollment fee</label>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div>
+                            <label>Yearly Charges</label>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div>
+                            <label>Share Allocated</label>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div>
+                            <label>Total Amount </label>
+                            <input type="number" name="" id="">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="inner_form">
+                <div>
+                    <label>Next Amount Due </label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>Date of Amount Paid</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>UTR No</label>
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+            <div class="inner_form">
+                <div>
+                    <label>Transaction Date</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>Balance</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Status</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="status" name="status">
+                        <option selected disabled>Select One</option>
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                        <option value="pending">Pending</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Submit Now</button>
+            </div>
+    </div>
+
+    <!-- <div class="btn" id="btnPrint">
+                <button>Print Receipt</button>
+            </div> -->
+
+    </form>
+    </div>
+
+    <script>
+        const $btnPrint = document.querySelector("#btnPrint");
+        $btnPrint.addEventListener("click", () => {
+            window.print();
+        });
+    </script>
+</body>
+
+</html>

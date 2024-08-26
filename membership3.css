@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.main_div1{
+    width: 100%;
+    height: auto;
+    /* height: 100vh; */
+    background-color: #9DA2AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    /* border-radius: 10px; */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue;
+    height: 10px;
+  }
+
+form{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+.form_section{
+    margin-top: 20px;
+}
+
+h1{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.inner_form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+input{
+    margin-top: 5px;
+    display: block;
+    width: 250px;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+select{
+    display: block;
+    width: 250px;
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input:focus{
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.btn{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.scrolling_div{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    padding: 10px 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.main_div2{
+    width: 100%;
+    height: 100vh;
+    background-color: #9DA2AF;
+    padding-top: 60px;
+}
+
+fieldset{
+    padding: 10px;
+    width: 80%;
+    margin:auto ;
+}
+
+.main_div2 form{
+    height: 500px;
+}
+
+.btn2{
+    width: 14%;
+    margin: auto;
+}
+
+#receipt_form{
+    display: none;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberShip Registration Form</title>
+    <link rel="stylesheet" href="membership3.css">
+</head>
+
+<body>
+    <div class="main_div1" id="membership_form">
+        <form action="">
+            <h1>Membership Registration Form</h1>
+            <div class="form_section">
+
+                <div>
+                    <fieldset>
+                        <legend>Details</legend>
+                        <div class="inner_form">
+                            <div>
+                                <label>S. No : </label>
+                                <input type="name" name="" id="" placeholder="Enter serial number" required>
+                            </div>
+                            <div>
+                                <label>Creation Date : </label>
+                                <input type="text" id="dob" name="dob" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" placeholder="Enter creation date" required>
+                            </div>
+                        </div>
+                        <div class="inner_form">
+                            <div>
+                                <label>Starting FY : </label>
+                                <input type="text" id="dob" name="dob" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')" placeholder="Enter starting financial year" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Company Details</legend>
+                        <div class="inner_form">
+                            <div>
+                                <label>Company Name : </label>
+                                <input type="text" name="" id="" placeholder="Enter company name" required>
+                            </div>
+                            <div>
+                                <label>Company Address : </label>
+                                <input type="text" name="" id="" placeholder="Enter company address" required>
+                            </div>
+                        </div>
+                        <div class="inner_form">
+
+                            <div>
+                                <label>Company email id : </label>
+                                <input type="email" name="" id="" placeholder="Enter company email id" required>
+                            </div>
+                            <div>
+                                <label>Category : </label>
+                                <input type="text" name="" id="" placeholder="Enter category" required>
+                            </div>
+                        </div>
+                </div>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Person</legend>
+
+                        <div class="inner_form">
+                            <div>
+                                <label>Company Contact Person name : </label>
+                                <input type="text" name="" id="" placeholder="Enter person name" required>
+                            </div>
+                            <div>
+                                <label>Contact Person Email id : </label>
+                                <input type="email" name="" id="" placeholder="Enter perosn  email id" required>
+                            </div>
+                        </div>
+                        <div class="inner_form">
+                            <div>
+                                <label>Contact Person Phone Number : </label>
+                                <input type="email" name="" id="" placeholder="Enter perosn  phone number" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Statutory Details</legend>
+                        <div class="inner_form">
+                            <div>
+                                <label>UDAYAM Aadhar Card : </label>
+                                <input type="number" name="" id="" placeholder="Enter udayam aadhar card number"
+                                    required>
+                            </div>
+                            <div>
+                                <label>Old Membership Number : </label>
+                                <input type="number" name="" id="" placeholder="Enter old membership number" required>
+                            </div>
+
+                        </div>
+                        <div class="inner_form">
+
+                            <div>
+                                <label>PAN No : </label>
+                                <input type="text" name="" id="" placeholder="Enter pan number" required>
+                            </div>
+                            <div>
+                                <label>GST No : </label>
+                                <input type="text" name="" id="" placeholder="Enter GST number" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="inner_form">
+            </div>
+
+            <div class="btn">
+                <button>Save</button>
+                <button>Submit Now</button>
+                <button onclick="showForm()">Receipt Details</button>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <div class="main_div2" id="receipt_form">
+        <form action="index.php">
+            <h1>Receipt Details Form</h1>
+            <div class="inner_form">
+                <div>
+                    <label>Receipt No</label>
+                    <input type="number" name="ReceiptNo" id="" required>
+                </div>
+                <div>
+                    <label>Payment Method</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="paymentMethod" name="paymentMethod">
+                        <option selected disabled>Select One</option>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="debitCard">Debit Card</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                        <option value="cash">Cash</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Member ship ( New/ Renew)</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="membershipType" name="membershipType">
+                        <option selected disabled>Select One</option>
+                        <option value="new">New</option>
+                        <option value="renew">Renew</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="scrolling_div">
+                <div>
+                    <label>Year of Membership</label>
+                    <!-- <input type="number" name="" id=""> -->
+                    <select name="" id="">
+                        <option selected disabled>Select Year</option>
+                        <option value="">2018-19</option>
+                        <option value="">2019-20</option>
+                        <option value="">2020-21</option>
+                        <option value="">2021-22</option>
+                        <option value="">2022-23</option>
+                        <option value="">2023-24</option>
+                        <option value="">2024-25</option>
+                    </select>
+                </div>
+                <div>
+                    <label>One Time Enrollment fee</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Yearly Charges</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Share Allocated</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Total Amount </label>
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+            <div class="inner_form">
+                <div>
+                    <label>Next Amount Due </label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>Date of Amount Paid</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>UTR No</label>
+                    <input type="number" name="" id="">
+                </div>
+            </div>
+            <div class="inner_form">
+                <div>
+                    <label>Transaction Date</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div>
+                    <label>Balance</label>
+                    <input type="number" name="" id="">
+                </div>
+                <div>
+                    <label>Status</label>
+                    <!-- <input type="text" name="" id=""> -->
+                    <select id="status" name="status">
+                        <option selected disabled>Select One</option>
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                        <option value="pending">Pending</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Submit Now</button>
+                <button onclick="hideForm()">MemberShip Form</button>
+            </div>
+    </div>
+
+    <!-- <div class="btn" id="btnPrint">
+                <button>Print Receipt</button>
+            </div> -->
+
+    </form>
+    </div>
+
+    <script>
+        function showForm() {
+            document.getElementById("receipt_form").style.display = "block";
+            document.getElementById("membership_form").style.display = "none";
+        }
+
+        function hideForm() {
+            document.getElementById("receipt_form").style.display = "none";
+            document.getElementById("membership_form").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
